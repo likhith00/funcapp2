@@ -4,9 +4,9 @@ terraform {
     storage_account_name = "tostorestatefile"
     container_name       = "tfstatefile"
     key                  = "terraform.tfstate"
-    use_azuread_auth     = true
-    subscription_id      = "2cb27c6e-ba7a-433e-9ae6-af1d9abe6756"
-    tenant_id            = "e62f5ec4-08e6-44e1-9b54-573216ce136a"
+    #use_azuread_auth     = true
+    #subscription_id      = "2cb27c6e-ba7a-433e-9ae6-af1d9abe6756"
+    #tenant_id            = "e62f5ec4-08e6-44e1-9b54-573216ce136a"
   }
 }
 
