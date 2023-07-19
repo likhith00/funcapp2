@@ -71,7 +71,7 @@ resource "azurerm_function_app" "functionapp" {
         DOCKER_REGISTRY_SERVER_PASSWORD           = azurerm_container_registry.acr.admin_password
         WEBSITE_CONTENTAZUREFILECONNECTIONSTRING  = azurerm_storage_account.functionstorage.primary_connection_string
         WEBSITE_CONTENTSHARE                      = azurerm_storage_account.functionstorage.name
-        DOCKER_CUSTOM_IMAGE_NAME                  = "${azurerm_container_registry.acr.login_server}/pingtrigger:test"
+        DOCKER_CUSTOM_IMAGE_NAME                  = "${azurerm_container_registry.acr.login_server}/funcapp:latest"
     }
 
     site_config {
