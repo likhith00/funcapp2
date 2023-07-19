@@ -1,6 +1,7 @@
 terraform {
    backend "azurerm" {
-    storage_account_name = "storageacc5849"
+    resource_group_name  = "statefiles2507"
+    storage_account_name = "tostorestatefile"
     container_name       = "tfstate"
     key                  = "prod.terraform.tfstate"
     use_azuread_auth     = true
