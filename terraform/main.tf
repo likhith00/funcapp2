@@ -2,7 +2,7 @@ terraform {
    backend "azurerm" {
     resource_group_name  = "statefiles2507"
     storage_account_name = "tostorestatefile"
-    container_name       = "tfstate"
+    container_name       = "tfstatefile"
     key                  = "prod.terraform.tfstate"
     use_azuread_auth     = true
     subscription_id      = "2cb27c6e-ba7a-433e-9ae6-af1d9abe6756"
