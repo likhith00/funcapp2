@@ -1,6 +1,7 @@
 from transformers import pipeline
 
 
+
 def test_sentiment_classificationapp(prompt_text):
     classifier = pipeline("sentiment-analysis")
     result = classifier(prompt_text)[0]
