@@ -36,8 +36,10 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
+    - name: Run Unit Testing
+      run: pytest prompts/test_sentiment_classification_pytest.py
+
     - name: Run Data Testing
       run: pytest prompts/test_sentiment_data.py
 
-    - name: Run Model Testing
-      run: pytest prompts/test_sentiment_model.py
+    
