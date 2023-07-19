@@ -1,6 +1,6 @@
 terraform {
    backend "azurerm" {
-    storage_account_name = azure_storage_account.functionstorage.name
+    storage_account_name = "storageacc5849"
     container_name       = "tfstate"
     key                  = "prod.terraform.tfstate"
     use_azuread_auth     = true
