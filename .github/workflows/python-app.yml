@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "prompts" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "prompts" ]
   workflow_dispatch:
 
 permissions:
