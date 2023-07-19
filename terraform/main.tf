@@ -1,19 +1,13 @@
-/*terraform {
-  required_providers {
-    azurerm = {
-      source = "hashicorp/azurerm"
-      version = "=3.65.0"
-    }
-  }
+terraform {
    backend "azurerm" {
     storage_account_name = azure_storage_account.functionstorage.name
     container_name       = "tfstate"
     key                  = "prod.terraform.tfstate"
     use_azuread_auth     = true
-    subscription_id      = var
-    tenant_id            = "00000000-0000-0000-0000-000000000000"
+    subscription_id      = "2cb27c6e-ba7a-433e-9ae6-af1d9abe6756"
+    tenant_id            = "e62f5ec4-08e6-44e1-9b54-573216ce136a"
   }
-}*/
+}
 
 
 provider "azurerm" {
